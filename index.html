@@ -1,0 +1,124 @@
+DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Primer Proyecto Web</title>
+    
+    <style>
+       body {
+    background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
+}
+h1 {
+     color: #007bff;
+    text-align: center;
+}
+
+h2 {
+    color: #333333;
+    text-align: center;
+}
+p {
+    font-size: 1.1em; /* Un poco más grande que lo normal */
+    line-height: 1.6; /* Espacio entre líneas para facilitar la lectura */
+    margin: 0 20px; /* Margen de 20px a izquierda y derecha */
+}
+ /* Añade esto a tu sección <style> dentro del <head> */
+
+img {
+    width: 200px; /* Establece el ancho a 200 píxeles */
+    height: auto; /* Mantiene la proporción automáticamente para que no se vea estirada */
+    display: block; /* Hace que se comporte como un bloque, permitiendo centrarla */
+    margin: 20px auto; /* Centra la imagen horizontalmente y le da un margen superior/inferior */
+}
+/* Modifica tu regla div */
+div {
+    background-color: #ffffff; /* ¡Tu respuesta corregida! Fondo blanco */
+    border: 1px solid #cccccc; /* Añadir un borde gris claro y sólido de 1px */
+    padding: 20px; /* Espacio de relleno (padding) de 20px alrededor del contenido interno */
+    width: 80%; /* Hacer que la caja ocupe el 80% del ancho de la pantalla */
+    margin: 20px auto; /* Centrar la caja entera y darle margen de 20px arriba/abajo */
+}
+
+    </style>
+</head>
+
+<body>
+ <h1 id="titulo-principal" onclick="despedir()">Mi Tarjeta Interactiva de César</h1>
+
+      <script>
+        // 1. Aquí va todo el código que estaba en script.js
+        const nombre = "Cesar";
+        alert("¡Bienvenido, " + nombre + "!");
+        console.log("El script se ha ejecutado correctamente.");
+        console.log("El valor de la variable nombre es: " + nombre);
+
+        // 2. Aquí va la Tarea 11
+        const elementoTitulo = document.getElementById("¡Hola Mundo de la Programación!");
+        elementoTitulo.textContent = "Mi Tarjeta Interactiva de Cesar";
+         elementoTitulo.style.color = "#800080";
+    </script>
+    <div>
+    <h2 id="saludo-del-dia">Mi Nombre es Cesar pacheco</h2>
+    <script>
+      // TAREA 12: CONDICIONES IF/ELSE
+
+// 1. Obtenemos la hora actual
+const hora = new Date().getHours(); // Obtiene la hora actual (0 a 23)
+
+// 2. Encuentra el elemento <h2>
+const elementoSaludo = document.getElementById("saludo-del-dia");
+
+// 3. Lógica de Decisión
+if (elementoSaludo) { // Si el elemento fue encontrado...
+    if (hora < 12) {
+        // Si la hora es menor a 12 (mañana)
+        elementoSaludo.textContent = "¡Buenos días, César!";
+        elementoSaludo.style.color = "orange";
+    } else if (hora < 19) {
+        // Si la hora no fue menor a 12, pero es menor a 19 (tarde)
+        elementoSaludo.textContent = "¡Buenas tardes, César!";
+        elementoSaludo.style.color = "green";
+    } else {
+        // Si no fue ni mañana ni tarde (noche)
+        elementoSaludo.textContent = "¡Buenas noches, César!";
+        elementoSaludo.style.color = "blue";
+    }
+}
+
+    
+
+    </script>
+
+<p id="parrafo-interactivo">Este es el comienzo de mi ruta de aprendizaje en Desarrollo Web, y lo estoy haciendo desde mi teléfono. Estoy usando HTML para estructurar mi primer contenido.</p>
+<script>
+  // TAREA 13: DEFINICIÓN DE UNA FUNCIÓN
+
+// Definimos la función. Aún NO se ejecuta, solo le estamos enseñando al JS cómo hacer esto.
+function despedir() {
+    // 1. Encuentra el párrafo
+    const parrafo = document.getElementById("parrafo-interactivo");
+
+    // 2. Cambia su contenido y estilo
+    if (parrafo) {
+        parrafo.textContent = "¡Gracias por visitar! Ahora el Semestre 2 continúa con la interactividad.";
+        parrafo.style.fontStyle = "italic"; // Poner el texto en cursiva
+    }
+}
+
+// Llama a la función para que se ejecute (la función se ejecuta inmediatamente al cargar);
+
+</script>
+
+<p>Con constancia y práctica, espero dominar esta nueva habilidad.</p>
+
+<img
+    src="https://avatars.githubusercontent.com/u/58888289?s=200&v=4."
+    alt="logo de GitHub."
+>
+</div>
+</body>
+</html>
+<a href="https://www.google.com" target="_blank">Visita Google</a>
+<br> <a href="https://github.com">Mi perfil de GitHub (¡Lo crearemos después!)</a>
